@@ -1,0 +1,76 @@
+/* page layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* this will center header, main, and footer
+  because they are the direct children of body */
+  background: #fbffca;
+  font-family: "Work Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+/* type */
+h1 {
+  text-align: center;
+  font-size: 37px;
+  line-height: 43px;
+  color: #26e2d7;
+  -webkit-text-fill-color: #26e2d7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 19px;
+  line-height: 22px;
+  color: #0500FF;
+  text-decoration: none;
+  display: block;
+}
+
+footer {
+  margin-top: auto; /* will stick footer to bottom of page */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 800px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  main {
+    flex-wrap: nowrap;
+  }
+
+  img {
+    padding-right: 40px;
+  }
+  
+  nav div {
+    display: flex;
+  }
+  
+  nav div a {
+    margin: 10px;
+  }
+}
